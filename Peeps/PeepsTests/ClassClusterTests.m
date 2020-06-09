@@ -10,7 +10,7 @@
 
 - (void)testStringClassCluster {
     NSString *s1 = [NSString alloc];
-    NSString *s2 = [NSString alloc];
+//    NSString *s2 = [NSString alloc];
     s1 = [s1 initWithFormat:@"%@ %@", @"Hello", @"World!"];
     
     NSMutableString *s3 = [[NSMutableString alloc] initWithString:s1];
@@ -18,7 +18,7 @@
     
     NSLog(@"%@", s1);
     NSLog(@"%@", s3);
-    NSLog(@"%@", s2);
+//    NSLog(@"%@", s2);
 }
 
 @end

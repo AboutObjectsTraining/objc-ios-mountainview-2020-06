@@ -37,48 +37,19 @@
     return self;
 }
 
-- (NSString *)firstName {
-    return _firstName;
-}
-- (void)setFirstName:(NSString *)newValue {
-    _firstName = [newValue copy];
-}
-
-- (NSString *)lastName {
-    return _lastName;
-}
-- (void)setLastName:(NSString *)newValue {
-    _lastName = [newValue copy];
-}
-
 - (NSString *)fullName {
-    return [[NSString alloc] initWithFormat:@"%@ %@", [self firstName], [self lastName]];
-}
-
-- (NSInteger)age {
-    return _age;
-}
-- (void)setAge:(NSInteger)newValue {
-    _age = newValue;
-}
-
-- (Dog *)dog {
-    return _dog;
-}
-- (void)setDog:(Dog *)newValue {
-    // TODO: Should we copy the dog?
-    _dog = [newValue copy];
+    return [[NSString alloc] initWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"name: %@, age: %@", [self fullName], @([self age])];
+    return [NSString stringWithFormat:@"name: %@, age: %@", self.fullName, @(self.age)];
 }
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     NSLog(@"In %s", __func__);
-    if ([[self dog] respondsToSelector:aSelector]) {
-        return [self dog];
+    if ([self.dog respondsToSelector:aSelector]) {
+        return self.dog;
     }
     return nil;
 }

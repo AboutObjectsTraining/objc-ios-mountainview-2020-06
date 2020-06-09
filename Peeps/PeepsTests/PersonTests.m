@@ -15,7 +15,8 @@
 //    NSString *desc = [fred description];
 //    NSLog(@"Description of fred: %s", desc);
     
-    [fred setFirstName:@"Fred"];
+    fred.firstName = @"Fred";
+//    [fred setFirstName:@"Fred"];
     NSLog(@"Description of fred: %@", fred);
 }
 
@@ -27,8 +28,12 @@
     Person *fred = [[Person alloc] init];
     NSLog(@"%@", fred);
     
-    [fred setFirstName:@"Fred"];
-    [fred setLastName:@"Smith"];
+//    [fred setFirstName:@"Fred"];
+//    [fred setLastName:@"Smith"];
+    
+    fred.firstName = @"Fred";
+    fred.lastName = @"Smith";
+    
     NSLog(@"%@", fred);
 }
 
