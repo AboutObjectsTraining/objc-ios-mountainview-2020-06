@@ -14,6 +14,7 @@
 		ABF33704180CA6E300A7A7D9 /* Person.c in Sources */ = {isa = PBXBuildFile; fileRef = ABF33703180CA6E300A7A7D9 /* Person.c */; };
 		ABF33707180CA6F500A7A7D9 /* Pointers.c in Sources */ = {isa = PBXBuildFile; fileRef = ABF33706180CA6F500A7A7D9 /* Pointers.c */; };
 		ABF33709180CBA5E00A7A7D9 /* Misc.c in Sources */ = {isa = PBXBuildFile; fileRef = ABF33708180CBA5E00A7A7D9 /* Misc.c */; };
+		B45A8D85248EDB210021E98C /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8D84248EDB210021E98C /* DemoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,10 +42,20 @@
 		ABF33706180CA6F500A7A7D9 /* Pointers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Pointers.c; sourceTree = "<group>"; };
 		ABF33708180CBA5E00A7A7D9 /* Misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Misc.c; sourceTree = "<group>"; };
 		ABF3370A180CBBD400A7A7D9 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		B45A8D82248EDB210021E98C /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45A8D84248EDB210021E98C /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
+		B45A8D86248EDB210021E98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AB34510A1806EA5900EEF511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45A8D7F248EDB210021E98C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				AB34510F1806EA5900EEF511 /* ANSI C Labs */,
+				B45A8D83248EDB210021E98C /* DemoTests */,
 				AB34510E1806EA5900EEF511 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				AB34510D1806EA5900EEF511 /* ANSI C Labs */,
+				B45A8D82248EDB210021E98C /* DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +101,15 @@
 			path = "ANSI C Labs";
 			sourceTree = "<group>";
 		};
+		B45A8D83248EDB210021E98C /* DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B45A8D84248EDB210021E98C /* DemoTests.m */,
+				B45A8D86248EDB210021E98C /* Info.plist */,
+			);
+			path = DemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +130,23 @@
 			productReference = AB34510D1806EA5900EEF511 /* ANSI C Labs */;
 			productType = "com.apple.product-type.tool";
 		};
+		B45A8D81248EDB210021E98C /* DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B45A8D89248EDB210021E98C /* Build configuration list for PBXNativeTarget "DemoTests" */;
+			buildPhases = (
+				B45A8D7E248EDB210021E98C /* Sources */,
+				B45A8D7F248EDB210021E98C /* Frameworks */,
+				B45A8D80248EDB210021E98C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoTests;
+			productName = DemoTests;
+			productReference = B45A8D82248EDB210021E98C /* DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +155,12 @@
 			attributes = {
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "About Objects";
+				TargetAttributes = {
+					B45A8D81248EDB210021E98C = {
+						CreatedOnToolsVersion = 11.5;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = AB3451081806EA5900EEF511 /* Build configuration list for PBXProject "ANSI C Labs" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -131,9 +176,20 @@
 			projectRoot = "";
 			targets = (
 				AB34510C1806EA5900EEF511 /* ANSI C Labs */,
+				B45A8D81248EDB210021E98C /* DemoTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B45A8D80248EDB210021E98C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB3451091806EA5900EEF511 /* Sources */ = {
@@ -147,6 +203,14 @@
 				ABA8ED62180DCFCB0039AB3C /* Utilities.c in Sources */,
 				AB34511D1807276800EEF511 /* ANSICBasics02.c in Sources */,
 				AB34511B1806EAAE00EEF511 /* ANSICBasics01.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45A8D7E248EDB210021E98C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45A8D85248EDB210021E98C /* DemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +328,56 @@
 			};
 			name = Release;
 		};
+		B45A8D87248EDB210021E98C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.DemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B45A8D88248EDB210021E98C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.DemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +395,15 @@
 			buildConfigurations = (
 				AB3451171806EA5900EEF511 /* Debug */,
 				AB3451181806EA5900EEF511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B45A8D89248EDB210021E98C /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45A8D87248EDB210021E98C /* Debug */,
+				B45A8D88248EDB210021E98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

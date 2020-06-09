@@ -7,23 +7,16 @@ enum ConversionType {
 
 typedef enum ConversionType ConversionType;
 
-float ConvertTemperature(float, ConversionType);
-void ShowConversion(float, ConversionType);
+//float ConvertTemperature(float, ConversionType);
+//void ShowConversion(float, ConversionType);
 
 
-void RunANSICBasics02(void)
+float ConvertTemperature(float temperature, ConversionType type)
 {
-    printf("\n%s\n-----------\n", __func__);
-    
-    ShowConversion(-17.8, CelsiusToFahrenheit);
-    ShowConversion(0.0, CelsiusToFahrenheit);
-
-    ShowConversion(0.0, FahrenheitToCelsius);
-    ShowConversion(98.6, FahrenheitToCelsius);
-    ShowConversion(F_FREEZING_POINT, FahrenheitToCelsius);
-    ShowConversion(F_BOILING_POINT, FahrenheitToCelsius);
+    return (type == CelsiusToFahrenheit ?
+            temperature * F_SCALE / C_SCALE + F_FREEZING_POINT :
+            (temperature - F_FREEZING_POINT) * C_SCALE / F_SCALE);
 }
-
 
 void ShowConversion(float temperature, ConversionType type)
 {
@@ -34,9 +27,15 @@ void ShowConversion(float temperature, ConversionType type)
            type == CelsiusToFahrenheit ? "Fahrenheit" : "Celsius");
 }
 
-float ConvertTemperature(float temperature, ConversionType type)
+void RunANSICBasics02(void)
 {
-    return (type == CelsiusToFahrenheit ?
-            temperature * F_SCALE / C_SCALE + F_FREEZING_POINT :
-            (temperature - F_FREEZING_POINT) * C_SCALE / F_SCALE);
+    printf("\n%s\n-----------\n", __func__);
+    
+    ShowConversion(-17.8, CelsiusToFahrenheit);
+    ShowConversion(0.0, CelsiusToFahrenheit);
+    
+    ShowConversion(0.0, FahrenheitToCelsius);
+    ShowConversion(98.6, FahrenheitToCelsius);
+    ShowConversion(F_FREEZING_POINT, FahrenheitToCelsius);
+    ShowConversion(F_BOILING_POINT, FahrenheitToCelsius);
 }
