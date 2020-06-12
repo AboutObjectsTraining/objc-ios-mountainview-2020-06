@@ -33,6 +33,8 @@
 		B45A8E7F249426320021E98C /* UIImage+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E7E249426320021E98C /* UIImage+RELAdditions.m */; };
 		B45A8E82249429620021E98C /* UIImageView+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E81249429620021E98C /* UIImageView+RELAdditions.m */; };
 		B45A8E8524942AC70021E98C /* ViewAndEditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A8E8324942AC70021E98C /* ViewAndEditBook.storyboard */; };
+		B45A8E8824942F950021E98C /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E8724942F950021E98C /* RELEditBookController.m */; };
+		B45A8E8B249433D20021E98C /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E8A249433D20021E98C /* UIStoryboardSegue+RELAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,10 @@
 		B45A8E80249429620021E98C /* UIImageView+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RELAdditions.h"; sourceTree = "<group>"; };
 		B45A8E81249429620021E98C /* UIImageView+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RELAdditions.m"; sourceTree = "<group>"; };
 		B45A8E8424942AC70021E98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadingList/Base.lproj/ViewAndEditBook.storyboard; sourceTree = "<group>"; };
+		B45A8E8624942F950021E98C /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
+		B45A8E8724942F950021E98C /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		B45A8E89249433D20021E98C /* UIStoryboardSegue+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+RELAdditions.h"; sourceTree = "<group>"; };
+		B45A8E8A249433D20021E98C /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +123,6 @@
 		B45A8E242492F03C0021E98C = {
 			isa = PBXGroup;
 			children = (
-				B45A8E8324942AC70021E98C /* ViewAndEditBook.storyboard */,
 				B45A8E2F2492F03C0021E98C /* ReadingList */,
 				B45A8E55249405310021E98C /* ReadingListModel */,
 				B45A8E2E2492F03C0021E98C /* Products */,
@@ -142,10 +147,15 @@
 				B45A8E4A2493F1F20021E98C /* RELReadingListController.m */,
 				B45A8E4C2493F7880021E98C /* RELViewBookController.h */,
 				B45A8E4D2493F7880021E98C /* RELViewBookController.m */,
+				B45A8E8624942F950021E98C /* RELEditBookController.h */,
+				B45A8E8724942F950021E98C /* RELEditBookController.m */,
+				B45A8E89249433D20021E98C /* UIStoryboardSegue+RELAdditions.h */,
+				B45A8E8A249433D20021E98C /* UIStoryboardSegue+RELAdditions.m */,
 				B45A8E7D249426320021E98C /* UIImage+RELAdditions.h */,
 				B45A8E7E249426320021E98C /* UIImage+RELAdditions.m */,
 				B45A8E80249429620021E98C /* UIImageView+RELAdditions.h */,
 				B45A8E81249429620021E98C /* UIImageView+RELAdditions.m */,
+				B45A8E8324942AC70021E98C /* ViewAndEditBook.storyboard */,
 				B45A8E392492F03C0021E98C /* Main.storyboard */,
 				B45A8E3C2492F03D0021E98C /* Assets.xcassets */,
 				B45A8E3E2492F03D0021E98C /* LaunchScreen.storyboard */,
@@ -297,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45A8E8B249433D20021E98C /* UIStoryboardSegue+RELAdditions.m in Sources */,
+				B45A8E8824942F950021E98C /* RELEditBookController.m in Sources */,
 				B45A8E82249429620021E98C /* UIImageView+RELAdditions.m in Sources */,
 				B45A8E322492F03C0021E98C /* RELAppDelegate.m in Sources */,
 				B45A8E4B2493F1F20021E98C /* RELReadingListController.m in Sources */,

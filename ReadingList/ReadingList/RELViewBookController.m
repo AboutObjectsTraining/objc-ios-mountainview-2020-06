@@ -2,8 +2,10 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import "RELViewBookController.h"
+#import "RELEditBookController.h"
 #import <ReadingListModel/ReadingListModel.h>
 #import "UIImage+RELAdditions.h"
+#import "UIStoryboardSegue+RELAdditions.h"
 
 @interface RELViewBookController ()
 
@@ -26,6 +28,11 @@
     self.lastNameLabel.text = self.book.author.lastName;
     
     self.imageView.image = [UIImage rel_imageNamed:self.book.author.lastName];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    RELEditBookController *controller = segue.rel_destinationViewController;
+    controller.book = self.book;
 }
 
 - (IBAction)cancel:(UIStoryboardSegue *)unwindSegue {

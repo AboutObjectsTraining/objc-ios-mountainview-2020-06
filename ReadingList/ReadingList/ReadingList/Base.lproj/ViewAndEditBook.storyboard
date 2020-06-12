@@ -162,7 +162,7 @@
         <!--Edit Book-->
         <scene sceneID="L35-pW-AQU">
             <objects>
-                <tableViewController id="f1o-zK-7KX" sceneMemberID="viewController">
+                <tableViewController id="f1o-zK-7KX" customClass="RELEditBookController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="sSB-1h-pso">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,10 +322,16 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="IS8-s0-I9C">
                             <connections>
-                                <segue destination="zzn-pA-WVS" kind="unwind" unwindAction="done:" id="Pqf-97-pPK"/>
+                                <segue destination="zzn-pA-WVS" kind="unwind" identifier="Done" unwindAction="done:" id="Pqf-97-pPK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameField" destination="U8P-e1-Nn3" id="Iqh-Xj-wpE"/>
+                        <outlet property="lastNameField" destination="iNa-oC-SZt" id="MUC-WF-4VB"/>
+                        <outlet property="titleField" destination="0f0-sI-7wO" id="q7F-pH-wuW"/>
+                        <outlet property="yearField" destination="g9g-TD-6fV" id="UxC-t7-pma"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XN0-Tj-Bzf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zzn-pA-WVS" userLabel="Exit" sceneMemberID="exit"/>

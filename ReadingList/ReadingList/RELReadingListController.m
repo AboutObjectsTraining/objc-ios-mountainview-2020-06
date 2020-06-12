@@ -4,6 +4,7 @@
 #import "RELReadingListController.h"
 #import "RELViewBookController.h"
 #import <ReadingListModel/ReadingListModel.h>
+#import "UIStoryboardSegue+RELAdditions.h"
 
 @interface RELReadingListController ()
 @property (strong, nonatomic) IBOutlet RLMStoreController *storeController;
@@ -20,7 +21,7 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    RELViewBookController *controller = segue.destinationViewController;
+    RELViewBookController *controller = segue.rel_destinationViewController;
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     controller.book = [self.readingList bookAtIndexPath:indexPath];
 }
@@ -28,7 +29,8 @@
 // MARK: - Unwind segues
 
 - (IBAction)done:(UIStoryboardSegue *)unwindSegue {
-    // TODO: Save changes and sync UI
+    [self.tableView reloadData];
+    [self.storeController saveReadingList:self.readingList];
 }
 
 - (IBAction)cancel:(UIStoryboardSegue *)unwindSegue {
