@@ -30,6 +30,7 @@
 		B45A8E7A249405990021E98C /* ReadingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B45A8E6C249405990021E98C /* ReadingList.plist */; };
 		B45A8E7B249405990021E98C /* RLMStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E6D249405990021E98C /* RLMStoreController.m */; };
 		B45A8E7C249405990021E98C /* RLMModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E6E249405990021E98C /* RLMModelObject.m */; };
+		B45A8E7F249426320021E98C /* UIImage+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E7E249426320021E98C /* UIImage+RELAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		B45A8E6C249405990021E98C /* ReadingList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ReadingList.plist; sourceTree = "<group>"; };
 		B45A8E6D249405990021E98C /* RLMStoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMStoreController.m; sourceTree = "<group>"; };
 		B45A8E6E249405990021E98C /* RLMModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMModelObject.m; sourceTree = "<group>"; };
+		B45A8E7D249426320021E98C /* UIImage+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RELAdditions.h"; sourceTree = "<group>"; };
+		B45A8E7E249426320021E98C /* UIImage+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RELAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				B45A8E4A2493F1F20021E98C /* RELReadingListController.m */,
 				B45A8E4C2493F7880021E98C /* RELViewBookController.h */,
 				B45A8E4D2493F7880021E98C /* RELViewBookController.m */,
+				B45A8E7D249426320021E98C /* UIImage+RELAdditions.h */,
+				B45A8E7E249426320021E98C /* UIImage+RELAdditions.m */,
 				B45A8E392492F03C0021E98C /* Main.storyboard */,
 				B45A8E3C2492F03D0021E98C /* Assets.xcassets */,
 				B45A8E3E2492F03D0021E98C /* LaunchScreen.storyboard */,
@@ -286,6 +291,7 @@
 				B45A8E322492F03C0021E98C /* RELAppDelegate.m in Sources */,
 				B45A8E4B2493F1F20021E98C /* RELReadingListController.m in Sources */,
 				B45A8E432492F03D0021E98C /* main.m in Sources */,
+				B45A8E7F249426320021E98C /* UIImage+RELAdditions.m in Sources */,
 				B45A8E4E2493F7880021E98C /* RELViewBookController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
