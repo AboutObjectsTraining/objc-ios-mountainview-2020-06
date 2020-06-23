@@ -56,7 +56,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Eod-Ji-wRa" kind="show" id="Chu-FJ-5Kb"/>
+                                    <segue destination="Eod-Ji-wRa" kind="show" identifier="View Book" id="Chu-FJ-5Kb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -67,7 +67,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Reading List" id="zd1-MU-RoI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JfY-i0-IHz"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="JfY-i0-IHz">
+                            <connections>
+                                <segue destination="6bk-cc-Co7" kind="presentation" id="FVC-JX-sy2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="storeController" destination="rqF-r9-nSO" id="yey-kc-FRc"/>
@@ -86,7 +90,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVw-Cn-uPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84" y="-31"/>
+            <point key="canvasLocation" x="-60" y="28"/>
+        </scene>
+        <!--AddBook-->
+        <scene sceneID="RpE-6i-Cxp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddBook" id="6bk-cc-Co7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsi-9U-CTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="-154"/>
         </scene>
     </scenes>
 </document>

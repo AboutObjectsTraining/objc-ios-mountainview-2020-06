@@ -35,6 +35,8 @@
 		B45A8E8524942AC70021E98C /* ViewAndEditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A8E8324942AC70021E98C /* ViewAndEditBook.storyboard */; };
 		B45A8E8824942F950021E98C /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E8724942F950021E98C /* RELEditBookController.m */; };
 		B45A8E8B249433D20021E98C /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E8A249433D20021E98C /* UIStoryboardSegue+RELAdditions.m */; };
+		B45A8E8E24943E2F0021E98C /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45A8E8D24943E2F0021E98C /* RELAddBookController.m */; };
+		B45A8E9124944C920021E98C /* AddBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45A8E8F24944C920021E98C /* AddBook.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,9 @@
 		B45A8E8724942F950021E98C /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
 		B45A8E89249433D20021E98C /* UIStoryboardSegue+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+RELAdditions.h"; sourceTree = "<group>"; };
 		B45A8E8A249433D20021E98C /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
+		B45A8E8C24943E2F0021E98C /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
+		B45A8E8D24943E2F0021E98C /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
+		B45A8E9024944C920021E98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadingList/Base.lproj/AddBook.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,12 +154,15 @@
 				B45A8E4D2493F7880021E98C /* RELViewBookController.m */,
 				B45A8E8624942F950021E98C /* RELEditBookController.h */,
 				B45A8E8724942F950021E98C /* RELEditBookController.m */,
+				B45A8E8C24943E2F0021E98C /* RELAddBookController.h */,
+				B45A8E8D24943E2F0021E98C /* RELAddBookController.m */,
 				B45A8E89249433D20021E98C /* UIStoryboardSegue+RELAdditions.h */,
 				B45A8E8A249433D20021E98C /* UIStoryboardSegue+RELAdditions.m */,
 				B45A8E7D249426320021E98C /* UIImage+RELAdditions.h */,
 				B45A8E7E249426320021E98C /* UIImage+RELAdditions.m */,
 				B45A8E80249429620021E98C /* UIImageView+RELAdditions.h */,
 				B45A8E81249429620021E98C /* UIImageView+RELAdditions.m */,
+				B45A8E8F24944C920021E98C /* AddBook.storyboard */,
 				B45A8E8324942AC70021E98C /* ViewAndEditBook.storyboard */,
 				B45A8E392492F03C0021E98C /* Main.storyboard */,
 				B45A8E3C2492F03D0021E98C /* Assets.xcassets */,
@@ -288,6 +296,7 @@
 				B45A8E8524942AC70021E98C /* ViewAndEditBook.storyboard in Resources */,
 				B45A8E402492F03D0021E98C /* LaunchScreen.storyboard in Resources */,
 				B45A8E3D2492F03D0021E98C /* Assets.xcassets in Resources */,
+				B45A8E9124944C920021E98C /* AddBook.storyboard in Resources */,
 				B45A8E3B2492F03C0021E98C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +322,7 @@
 				B45A8E322492F03C0021E98C /* RELAppDelegate.m in Sources */,
 				B45A8E4B2493F1F20021E98C /* RELReadingListController.m in Sources */,
 				B45A8E432492F03D0021E98C /* main.m in Sources */,
+				B45A8E8E24943E2F0021E98C /* RELAddBookController.m in Sources */,
 				B45A8E7F249426320021E98C /* UIImage+RELAdditions.m in Sources */,
 				B45A8E4E2493F7880021E98C /* RELViewBookController.m in Sources */,
 			);
@@ -364,6 +374,14 @@
 				B45A8E8424942AC70021E98C /* Base */,
 			);
 			name = ViewAndEditBook.storyboard;
+			sourceTree = "<group>";
+		};
+		B45A8E8F24944C920021E98C /* AddBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45A8E9024944C920021E98C /* Base */,
+			);
+			name = AddBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
